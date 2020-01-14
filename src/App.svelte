@@ -20,7 +20,7 @@
 
 <main>
 	<h1>A Creatives Blog</h1>
-	<svelte:component this={components[index]} on:switchMainComponent={handleSwitch(event)} />
+	<svelte:component this={components[index]} on:switchMainComponent={handleSwitch} />
 </main>
 
 <style>

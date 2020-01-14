@@ -85,8 +85,8 @@
             <h2>Media & Art</h2>
         </div>
     </div>
-    <div class="Collumn" id="About-Poetry" on:click={() => switchComponents(3)}>
-        <div class="Section" id="About" style="background-image: url({AboutBackground})">
+    <div class="Collumn" id="About-Poetry">
+        <div class="Section" id="About" style="background-image: url({AboutBackground})" on:click={() => switchComponents(3)}>
             <div class="Overlay">
                 <h2>About</h2>
             </div>
