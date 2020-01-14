@@ -3,11 +3,9 @@
 
 	const dispatch = createEventDispatcher();
 
-	function switchComponents(newIndex) {
-        console.log(newIndex)
-		dispatch('switchMainComponent', {
-			newIndex
-		});
+	function switchComponents(index) {
+        console.log(index)
+		dispatch('switchMainComponent', {index});
     };
     
     import AboutBackground from '../../Img/IMG_1280.jpeg'
@@ -75,24 +73,24 @@
 </style>
 
 <div class="Home">
-    <div class="Collumn Section" id="Blog" style="background-image: url({BlogBackground})" on:click={() => switchComponents(1)}>
-        <div class="Overlay">
+    <div class="Collumn Section" id="Blog" style="background-image: url({BlogBackground})">
+        <div class="Overlay" on:click={() => switchComponents(1)}>
             <h2>Blog</h2>
         </div>
     </div>
-    <div class="Collumn Section" id="Media-Art" style="background-image: url({MediaArtBackground})" on:click={() => switchComponents(2)}>
-        <div class="Overlay">
+    <div class="Collumn Section" id="Media-Art" style="background-image: url({MediaArtBackground})">
+        <div class="Overlay" on:click={() => switchComponents(2)}>
             <h2>Media & Art</h2>
         </div>
     </div>
     <div class="Collumn" id="About-Poetry">
-        <div class="Section" id="About" style="background-image: url({AboutBackground})" on:click={() => switchComponents(3)}>
-            <div class="Overlay">
+        <div class="Section" id="About" style="background-image: url({AboutBackground})" >
+            <div class="Overlay" on:click={() => switchComponents(3)}>
                 <h2>About</h2>
             </div>
         </div>
-        <div class="Section" id="Poetry" style="background-image: url({PoetryBackground})" on:click={() => switchComponents(4)}>
-            <div class="Overlay">
+        <div class="Section" id="Poetry" style="background-image: url({PoetryBackground})">
+            <div class="Overlay" on:click={() => switchComponents(4)}>
                 <h2>Poetry</h2>
             </div>
         </div>
