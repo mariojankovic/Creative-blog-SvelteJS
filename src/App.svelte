@@ -14,6 +14,7 @@
 		Poetry
 	];
 	function handleSwitch(event){
+		console.log('fired')
 		index = event.detail.index;
 	} 
 </script>

@@ -4,6 +4,7 @@
 	const dispatch = createEventDispatcher();
 
 	function switchComponents(index) {
+        console.log('fired')
         console.log(index)
 		dispatch('switchMainComponent', {index});
     };
