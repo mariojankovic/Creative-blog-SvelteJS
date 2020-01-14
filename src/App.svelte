@@ -21,7 +21,7 @@
 
 <main>
 	<h1>A Creatives Blog</h1>
-	<Home on:switchMainComponent={handleSwitch} />
+	<svelte:component this={components[index]} on:switchMainComponent={(event) => handleSwitch(event)} />
 </main>
 
 <style>

@@ -4,6 +4,7 @@
 	const dispatch = createEventDispatcher();
 
 	function switchComponents(newIndex) {
+        console.log(newIndex)
 		dispatch('switchMainComponent', {
 			index: newIndex
 		});
@@ -84,7 +85,7 @@
             <h2>Media & Art</h2>
         </div>
     </div>
-    <div class="Collumn" id="About-Poetry" on:click={switchComponents(3)}>
+    <div class="Collumn" id="About-Poetry" on:click={() => switchComponents(3)}>
         <div class="Section" id="About" style="background-image: url({AboutBackground})">
             <div class="Overlay">
                 <h2>About</h2>
