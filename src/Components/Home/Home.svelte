@@ -6,7 +6,7 @@
 	function switchComponents(newIndex) {
         console.log(newIndex)
 		dispatch('switchMainComponent', {
-			index: newIndex
+			newIndex
 		});
     };
     

@@ -14,14 +14,13 @@
 		Poetry
 	];
 	function handleSwitch(event){
-		console.log(event.detail.index);
 		index = event.detail.index;
 	} 
 </script>
 
 <main>
 	<h1>A Creatives Blog</h1>
-	<svelte:component this={components[index]} on:switchMainComponent={(event) => handleSwitch(event)} />
+	<svelte:component this={components[index]} on:switchMainComponent={handleSwitch(event)} />
 </main>
 
 <style>
