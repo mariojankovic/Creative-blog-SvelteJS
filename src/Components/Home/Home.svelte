@@ -75,12 +75,12 @@
 </style>
 
 <div class="Home">
-    <div class="Collumn Section" id="Blog" style="background-image: url({BlogBackground})" on:click={switchComponents(1)}>
+    <div class="Collumn Section" id="Blog" style="background-image: url({BlogBackground})" on:click={() => switchComponents(1)}>
         <div class="Overlay">
             <h2>Blog</h2>
         </div>
     </div>
-    <div class="Collumn Section" id="Media-Art" style="background-image: url({MediaArtBackground})" on:click={switchComponents(2)}>
+    <div class="Collumn Section" id="Media-Art" style="background-image: url({MediaArtBackground})" on:click={() => switchComponents(2)}>
         <div class="Overlay">
             <h2>Media & Art</h2>
         </div>
@@ -91,7 +91,7 @@
                 <h2>About</h2>
             </div>
         </div>
-        <div class="Section" id="Poetry" style="background-image: url({PoetryBackground})" on:click={switchComponents(4)}>
+        <div class="Section" id="Poetry" style="background-image: url({PoetryBackground})" on:click={() => switchComponents(4)}>
             <div class="Overlay">
                 <h2>Poetry</h2>
             </div>
